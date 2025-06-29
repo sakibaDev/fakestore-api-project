@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Closet</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar using bootstrap -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Your Closet</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a id="home-btn" class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a id="cart-btn" class="nav-link" href="#">Cart</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Search</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Add this div to show success messages -->
+    <div id="message" class="message hidden">Added to cart successfully!</div>
+
+    <div id="cart-container" class="cart-container hidden">
+      <h3 class="cart-title">Your Cart</h3>
+      <div id="cart-items" class="cart-items"></div>
+      <h4 id="total-price" class="total-price">Total: $0.00</h4>
+    </div>
+
+    <main>
+      <div>
+        <div id="product-container" class="product-container"></div>
+
+        <!-- <div id="cart-container" class="cart-container">
+          <h4>Cart</h4>
+          <hr />
+          <div id="added-to-cart" class="added-to-cart"></div>
+        </div> -->
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
